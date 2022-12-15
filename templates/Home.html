@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--  -->
+<div class="container-fluid">
+   {% if user.is_authenticated %}
+    <div class="row align-items-center" >
+        <div class="col-lg-4">
+            <div class="card-single">
+               <div>
+                    <h1>6$</h1>
+                    <span>Total income</span>
+                </div>
+                <div>
+                    <span class="fa fa-money me-2"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card-single">
+               <div>
+                    <h1>10$</h1>
+                    <span>Total Withdrwan</span>
+                </div>
+                <div>
+                    <span class="fa fa-credit-card-alt me-2"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card-single">
+               <div>
+                    <h1>6</h1>
+                    <span>Total Refferal</span>
+                </div>
+                <div>
+                    <span class="fa fa-users me-2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--New Row-->
+     <div class="row">
+        <div class="col-4">
+            <div class="card-single">
+               <div>
+                    <h1>20$</h1>
+                    <span>Total Deposit</span>
+                </div>
+                <div>
+                    <span class="fa fa-money me-2"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card-single">
+               <div>
+                    <h1>10$</h1>
+                    <span>Youtube Earnings</span>
+                </div>
+                <div>
+                    <span class="fa fa-youtube-play me-2"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card-single">
+               <div>
+                    <h1>2$</h1>
+                    <span>Refferal Earnings</span>
+                </div>
+                <div>
+                    <span class="fa fa-users me-2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+   {% else %}
+
+    <h4>Please activate your account to proceed to your Dashboard</h4>
+   {% endif %}
+
+    <!--Checkong-->
+    
+    <!--End check-->
+</div>
+{% endblock %}

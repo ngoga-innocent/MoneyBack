@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid">
+    <div class="thumbnail">
+        <span class="fa fa-users"></span>
+    </div>
+    {% if user.is_authenticated %}
+     <h5> {{  user.first_name }} {{ user.last_name }}</h5>
+     <h6>{{ user.email }}</h6>
+     <h5>{{ user.username }}</h5>
+
+    {% endif %}
+</div>
+{% endblock%}

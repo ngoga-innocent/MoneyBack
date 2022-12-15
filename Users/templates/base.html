@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+    <title>Home-MoneyBack</title>
+</head>
+<body>
+    <div class="d-flex wrapper">
+     <!--Sidebar starts here-->
+     <div class="sidebar">
+      <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase">
+        <i class="fa fa-user-secret me-2"></i>MoneBack
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li><a href=""><i class="fa fa-tachometer me-2"></i>Dashboard</a></li>
+          <li><a href=""><i class="fa fa-credit-card-alt me-2"></i>Deposit</a></li>
+          <li><a href=""><i class="fa fa-money me-2"></i>Withdraw</a></li>
+          <li><a href=""><i class="fa fa-youtube-play me-2"></i>Youtube Earnings</a></li>
+          <li><a href=""><i class="fa fa-tasks me-2"></i>Tasks</a></li>
+          <li><a href=""><i class="fa fa-users me-2"></i>Referral</a></li>
+          <li><a href=""><i class="fa fa-user-circle-o me-2"></i>My Account</a></li>
+          <li><a href=""><i class="fa fa-sign-out me-2"></i>Sign Out</a></li>
+        </ul>
+      </div>
+
+     </div>
+     </div>
+
+
+     <!--Side bar ends here-->
+
+     <div id="page-content-wrapper">
+         
+       {% block content %}
+
+       {% endblock %}
+     </div>
+     
+
+  
+
+
+
+    
+
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
